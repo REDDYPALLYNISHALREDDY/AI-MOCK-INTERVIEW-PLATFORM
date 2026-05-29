@@ -159,7 +159,7 @@ function Interview() {
     try {
 
       const response = await api.get(
-        `/api/interview/start?domain=${domain}&difficulty=${difficulty}`
+        `/interview/start?domain=${domain}&difficulty=${difficulty}`
       )
 
       setQuestion(response.data)
